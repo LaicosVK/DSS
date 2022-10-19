@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         DSS Loader
+// @name         DSS Loader loader
 // @namespace    https://die-staemme.de/
 // @version      1.0
 // @description  Läd den LVK Script loader

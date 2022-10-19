@@ -2,7 +2,7 @@
 // @name         LaicosVK's DSS Loader
 // @namespace    https://die-staemme.de/
 // @version      2
-// @description  Läd den LVK Script loader
+// @description  Läd alle LVK Scripte
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*
 // @grant        none

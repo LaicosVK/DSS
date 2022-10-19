@@ -8,6 +8,7 @@
 // @grant        none
 // @icon         https://www.die-staemme.de/graphic/unit/def.png
 
-// @require      https://github.com/LaicosVK/DSS/raw/main/scripts/loader.user.js
+// @require      https://github.com/LaicosVK/DSS/raw/main/scripts/Raubzugrechner.user.js
+// @require      https://github.com/LaicosVK/DSS/raw/main/scripts/Quick%20select.user.js
 
 // ==/UserScript==

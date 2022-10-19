@@ -2,7 +2,7 @@
 // @name         DSS Loader
 // @namespace    https://die-staemme.de/
 // @version      1.0
-// @description  Läd alle LVK Scripte
+// @description  Läd den LVK Script loader
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*
 // @grant        none
@@ -10,4 +10,4 @@
 
 let win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
 win.$.ajaxSetup({ cache: true });
-win.$.getScript('');
+win.$.getScript('https://github.com/LaicosVK/DSS/raw/main/scripts/loader.user.js');

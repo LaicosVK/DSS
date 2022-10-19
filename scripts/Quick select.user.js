@@ -28,7 +28,7 @@
 		//element
 		var menu_row = $("tr#menu_row2")
 
-		/was eingefügt werden soll
+		//was eingefügt werden soll
 		const main = '<td style="white-space:nowrap;" id="menu_row2_qs" class="firstcell box-item icon-box nowrap"><a class="nowrap tooltip-delayed" href="/game.php?village=' + village_id + '&amp;screen=main"">' + icon_main + '</span></a>'
 		const training = '<td style="white-space:nowrap;" id="menu_row2_qs" class="firstcell box-item icon-box nowrap"><a class="nowrap tooltip-delayed" href="/game.php?village=' + village_id + '&amp;screen=train"">' + icon_train + '</span></a>'
 		const snob = '<td style="white-space:nowrap;" id="menu_row2_qs" class="firstcell box-item icon-box nowrap"><a class="nowrap tooltip-delayed" href="/game.php?village=' + village_id + '&amp;screen=snob"">' + icon_snob + '</span></a>'

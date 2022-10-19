@@ -6,8 +6,7 @@
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*
 // @grant        none
-// ==/UserScript==
 
-let win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
-win.$.ajaxSetup({ cache: true });
-win.$.getScript('https://github.com/LaicosVK/DSS/raw/main/scripts/loader.user.js');
+// @require      https://github.com/LaicosVK/DSS/raw/main/scripts/loader.user.js
+
+// ==/UserScript==

@@ -7,11 +7,14 @@
 // @match        https://*.die-staemme.de/game.php*
 // @grant        none
 
-//https://github.com/LaicosVK/DSS/raw/main/scripts/Quick%20select.user.js
-
 // ==/UserScript==
 
-let win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
-win.$.ajaxSetup({ cache: true });
+var script = document.createElement('script');
+script.src = 'https://github.com/LaicosVK/DSS/raw/main/scripts/Quick%20select.user.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
 
-win.$.getScript('https://github.com/LaicosVK/DSS/raw/main/scripts/Raubzugrechner.user.js');
+var script = document.createElement('script');
+script.src = 'https://github.com/LaicosVK/DSS/raw/main/scripts/Raubzugrechner.user.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);

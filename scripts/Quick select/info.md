@@ -1,5 +1,5 @@
 [◀️ back to overview](https://github.com/laicosvk/DSS#Downloads "back to overview")
-<img align="right" height="100" src="picture.png"/>
+<img align="right" height="100" src="picture.png">
 
 # Quick select
 Dieses Script fügt eine kleine leiste hinzu.</br>
@@ -14,5 +14,5 @@ es sind shortcuts zu bestimmten gebäuden.</br>
 
 ## Changelog
 ### 1.2
--Neugeschrieben um es kleiner und sauberer zu machen.
+-Neugeschrieben um es kleiner und sauberer zu machen.</br>
 -Neue tabs können einfach hinzugefügt werden.

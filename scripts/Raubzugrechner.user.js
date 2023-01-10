@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Rechnet automatisch raubzug Truppeneinheiten aus
 // @author       LaicosVK
-// @match        https://*.die-staemme.de/game.php?village=*&screen=place&mode=scavenge
+// @match        https://*.die-staemme.de/game.php?*&mode=scavenge
 // @grant        none
 // ==/UserScript==
 

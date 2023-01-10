@@ -3,7 +3,7 @@
 
 # Raubzugrechner
 Sobald im Raubzug Tab 2 Sammler freigeschaltet sind wird eine Tabelle eingeblendet.</br>
-Die Tabelle zeigt dir wieviele Einheiten zu welchen Sammlern müssen um in der kürzesten Zeit die meisten resourcen zu bekommen.
+Die Tabelle zeigt dir wieviele Einheiten zu welchen Sammlern müssen, um in der kürzesten Zeit die meisten resourcen zu bekommen.
 
 ## Details
 

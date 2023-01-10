@@ -1,18 +1,15 @@
 # Die Stämme Scripts
-<p align="center">**⚠️ACHTUNG!⚠️
+**⚠️ACHTUNG!⚠️
 Diese scripts sind nicht offiziell und daher im regulärem Spiel nicht erlaubt!
 Benutzung auf eigene Gefahr!**
 
 
-<a href="https://github.com/LaicosVK/DSS/stargazers"><img src="https://badgen.net/github/stars/laicosvk/DSS"> </a>
-Willst du uns einen Stern geben?</p>
-
 # Downloads
 | Script | Version | Link | Mehr Infos |
 | :---: | :---: | :---: | :---: |
-| Quick select | 1.2 | [Download]() | [Infos]() |
-| Raubzugrechner | 1.0 | [Download]() | [Infos]() |
-| Rohstoff Zeit Monitor | 1.0 | [Download]() | [Infos]() |
+| Quick select | 1.2 | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Quick%20select/Quick%20select.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Quick%20select/info.md) |
+| Raubzugrechner | 1.0 | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Raubzugrechner/Raubzugrechner.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Raubzugrechner/info.md) |
+| Rohstoff Zeit Monitor | 1.0 | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Rohstoff%20Zeit%20Monitor/Rohstoff%20Zeit%20Monitor.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Rohstoff%20Zeit%20Monitor/info.md) |
 
 # Installation
 Um Scripte nutzen zu können wird ein Addon in deinem browser gebraucht.

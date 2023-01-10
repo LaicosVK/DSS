@@ -1,5 +1,5 @@
 [◀️ back to overview](https://github.com/laicosvk/DSS#Downloads "back to overview")
-<img align="right" height="100" src="picture.png"/>
+<img align="right" height="100" src="picture.PNG"/>
 
 # Rohstoff Zeit Monitor
 Lass dir anzeigen wie lange du auf welche Rohstoffe warten musst.</br>

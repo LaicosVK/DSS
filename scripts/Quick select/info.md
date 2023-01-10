@@ -1,13 +1,18 @@
 [◀️ back to overview](https://github.com/laicosvk/DSS#Downloads "back to overview")
 <img align="right" height="100" src="picture.png"/>
 
-# Scriptname
-Beschreibung
+# Quick select
+Dieses Script fügt eine kleine leiste hinzu.</br>
+es sind shortcuts zu bestimmten gebäuden.</br>
+(Vergleichbar mit der Schnellleiste des Premiumvorteils)
 
 ## Details
-
-|  |  |  
+| Programmierer | LaicosVK |
 | :---: | :---: |
-| Programmierer |  | 
-| Version |  | 
-| Aktualisierung |  | 
+| Version | 1.2 |
+| Aktualisierung | 10.01.23 |
+
+## Changelog
+### 1.2
+-Neugeschrieben um es kleiner und sauberer zu machen.
+-Neue tabs können einfach hinzugefügt werden.

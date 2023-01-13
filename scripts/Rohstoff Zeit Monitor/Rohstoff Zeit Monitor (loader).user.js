@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Rohstoff Zeit Monitor
+// @name         Rohstoff Zeit Monitor (loader)
 // @namespace    https://die-staemme.de/
 // @version      1.0
 // @description  Zeigt die Zeiten für fehlende Rohstoffe an.

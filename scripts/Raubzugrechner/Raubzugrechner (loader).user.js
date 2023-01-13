@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Raubzugrechner
+// @name         Raubzugrechner (loader)
 // @namespace    https://die-staemme.de/
 // @version      1.0
 // @description  Rechnet automatisch raubzug Truppeneinheiten aus

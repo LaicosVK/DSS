@@ -10,6 +10,7 @@ es sind shortcuts zu bestimmten gebäuden.</br>
 | Programmierer | LaicosVK |
 | :---: | :---: |
 | Version | 1.2 |
+| Loader | 1.0 |
 | Aktualisierung | 10.01.23 |
 
 ## Changelog

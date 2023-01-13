@@ -48,11 +48,11 @@
 		//berechne wenn 4 freigeschaltet sind
         if(unlocked_4){
 			devide = 1000
-			times = 588
+			times = 587
             spear_a = spear/devide*times, sword_a = sword/devide*times, axe_a = axe/devide*times, archer_a = archer/devide*times, lkav_a = lkav/devide*times, marcher_a = marcher/devide*times, skav_a = skav/devide*times
-			times = 235
+			times = 234
             spear_b = spear/devide*times, sword_b = sword/devide*times, axe_b = axe/devide*times, archer_b = archer/devide*times, lkav_b = lkav/devide*times, marcher_b = marcher/devide*times, skav_b = skav/devide*times
-			times = 118
+			times = 117
             spear_c = spear/devide*times, sword_c = sword/devide*times, axe_c = axe/devide*times, archer_c = archer/devide*times, lkav_c = lkav/devide*times, marcher_c = marcher/devide*times, skav_c = skav/devide*times
 			times = 78
             spear_d = spear/devide*times, sword_d = sword/devide*times, axe_d = axe/devide*times, archer_d = archer/devide*times, lkav_d = lkav/devide*times, marcher_d = marcher/devide*times, skav_d = skav/devide*times

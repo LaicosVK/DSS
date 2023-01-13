@@ -6,6 +6,7 @@
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*
 // @grant        none
+// @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/icon.png
 // ==/UserScript==
 
 (function() {

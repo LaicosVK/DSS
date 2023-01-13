@@ -9,6 +9,6 @@
 // @grant        none
 // @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/lvk/icon.png
 
-// @require      https://github.com/LaicosVK/DSS/raw/main/scripts/Quick%20select/Training%20redirect.user.js
+// @require      https://github.com/LaicosVK/DSS/raw/main/scripts/Training%20redirect/Training%20redirect.user.js
 
 // ==/UserScript==

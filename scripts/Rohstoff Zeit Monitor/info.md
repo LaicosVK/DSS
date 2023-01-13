@@ -1,13 +1,15 @@
 [◀️ back to overview](https://github.com/laicosvk/DSS#Downloads "back to overview")
-<img align="right" height="100" src="picture.png"/>
+<img align="right" height="100" src="picture.PNG"/>
 
-# Scriptname
-Beschreibung
+# Rohstoff Zeit Monitor
+Lass dir anzeigen wie lange du auf welche Rohstoffe warten musst.</br>
+Funktioniert im Hauptgebäude und im Adelshof.
 
 ## Details
 
-|  |  |  
+| Programmierer | DasMonschta |
 | :---: | :---: |
-| Programmierer |  | 
-| Version |  | 
-| Aktualisierung |  | 
+| Version | 1.0 |
+| Aktualisierung | 10.01.23 |
+
+## Changelog

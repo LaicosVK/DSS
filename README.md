@@ -12,7 +12,7 @@ Benutzung auf eigene Gefahr!**
 | Rohstoff Zeit Monitor | 1.0 | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Rohstoff%20Zeit%20Monitor/Rohstoff%20Zeit%20Monitor.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Rohstoff%20Zeit%20Monitor/info.md) |
 
 # Installation
-Um Scripte nutzen zu können wird ein Addon in deinem browser gebraucht.
+Um Scripte nutzen zu können wird ein Addon in deinem browser benötigt.</br>
 Downloade einen dieser Addons:
 
 | Addon | Chrome | Firefox |

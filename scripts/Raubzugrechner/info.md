@@ -1,13 +1,15 @@
 [◀️ back to overview](https://github.com/laicosvk/DSS#Downloads "back to overview")
-<img align="right" height="100" src="picture.png"/>
+<img align="right" height="100" src="picture.PNG"/>
 
-# Scriptname
-Beschreibung
+# Raubzugrechner
+Sobald im Raubzug Tab 2 Sammler freigeschaltet sind wird eine Tabelle eingeblendet.</br>
+Die Tabelle zeigt dir wieviele Einheiten zu welchen Sammlern müssen, um in der kürzesten Zeit die meisten resourcen zu bekommen.
 
 ## Details
 
-|  |  |  
+| Programmierer | LaicosVK |
 | :---: | :---: |
-| Programmierer |  | 
-| Version |  | 
-| Aktualisierung |  | 
+| Version | 1.0 |
+| Aktualisierung | 10.01.23 |
+
+## Changelog

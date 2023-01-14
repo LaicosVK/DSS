@@ -6,6 +6,7 @@
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*&screen=barracks
 // @match        https://*.die-staemme.de/game.php*&screen=stable
+// @match        https://*.die-staemme.de/game.php*&screen=garage
 // @grant        none
 // @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/lvk/icon.png
 

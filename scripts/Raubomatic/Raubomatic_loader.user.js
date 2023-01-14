@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Raubomatic (loader)
+// @name         Raubomatic Loader
 // @namespace    https://die-staemme.de/
 // @version      1.0
 // @description  Schickt auf Knopfdruck Einheiten auf Raubzüge los

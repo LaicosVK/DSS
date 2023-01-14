@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Training redirect
 // @namespace    https://die-staemme.de/
-// @version      1.0
+// @version      1.1
 // @description  Wechselt automatisch zur Training Seite
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*&screen=barracks

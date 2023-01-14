@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Training redirect (loader)
 // @namespace    https://die-staemme.de/
-// @version      1.0
+// @version      1.2
 // @description  Wechselt automatisch zur Training Seite
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*&screen=barracks
 // @match        https://*.die-staemme.de/game.php*&screen=stable
+// @match        https://*.die-staemme.de/game.php*&screen=garage
 // @grant        none
 // @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/lvk/icon.png
 

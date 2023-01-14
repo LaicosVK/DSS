@@ -20,9 +20,3 @@ Downloade einen dieser Addons:
 | :------------: | :------------: | :------------: |
 | Tampermonkey | [Download](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=de) | [Download](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) |
 | Greasemonkey | NA | [Download](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) |
-
-# Credits
-| Name |  |
-| :---: | :---: |
-| LaicosVK | Programming |
-| DasMonschta | Programming |

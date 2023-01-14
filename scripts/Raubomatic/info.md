@@ -1,7 +1,7 @@
 [◀️ back to overview](https://github.com/laicosvk/DSS#Downloads "back to overview")
 <img align="right" src="picture.PNG"/>
 
-# Raubzugrechner
+# Raubomatic
 Zeigt im Raubzug-Menü einen Buttom zum automatischen Abschicken von Raubzügen an. Es werden dabei die Einheiten so aufgeteilt, dass alle Raubzüge zur gleichen Zeit fertig werden. Es werden nur Einheitentypen verschickt, die ausgewählt wurden.
 
 ## Details
@@ -17,3 +17,4 @@ Zeigt im Raubzug-Menü einen Buttom zum automatischen Abschicken von Raubzügen 
 1.0 Erste Version
 1.1 - Raubomatic speichert die Einheitenauswahl jetzt (localStorage)
  - Bessere Einbindung des Menüs auf der Seite.
+1.1.1 - Bug, dass jeder Klick in das Raubomatic-Menü die Einheiten losgeschickt hat, wurde behoben.

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Raubomatic
 // @namespace    https://die-staemme.de/
-// @version      1.1
+// @version      1.1.1
 // @description  Schickt auf Knopfdruck Einheiten auf Raubzüge los
 // @author       Adrian
 // @match        https://*.die-staemme.de/game.php?*mode=scavenge*
@@ -73,8 +73,8 @@ $( document ).ready(function() {
 		}
 
 		// Buttons für das automatische Eintragen und Absenden
-		raubomaticDiv.append('<button type="button" class="btn-default" id="raubomatic" title="Sendet automatisch alle der ausgewählten Einheiten auf Raubzug">Losschicken</button>');
-		$('#raubomatic').click(startRaubomatic);
+		raubomaticDiv.append('<button type="button" class="btn-default" id="startRaubomatic" title="Sendet automatisch alle der ausgewählten Einheiten auf Raubzug">Losschicken</button>');
+		$('#startRaubomatic').click(startRaubomatic);
 		raubomaticDiv.append('<input type="checkbox" id="selectionDebug"'+(debug ? ' checked="checked"':'') +'title="Der Debug-Modus versendet keine Truppen, sondern gibt die Aufteilung in der Browser-Konsole aus." /> Debug');
 		$("#selectionDebug").change(changeDebug);
 	}, 20);

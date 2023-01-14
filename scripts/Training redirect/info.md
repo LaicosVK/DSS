@@ -9,8 +9,11 @@ Nie wieder hin und her schalten!
 
 | Programmierer | LaicosVK |
 | :---: | :---: |
-| Version | 1.0 |
+| Version | 1.1 |
 | Loader | 1.0 |
 | Aktualisierung | 13.01.23 |
 
 ## Changelog
+
+# 1.1:
+- Werkstatt hinzugefügt. (hab ich vergessen)

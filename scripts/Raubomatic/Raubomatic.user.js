@@ -5,8 +5,34 @@
 // @description  Schickt auf Knopfdruck Einheiten auf Raubzüge los
 // @author       Adrian
 // @match        https://*.die-staemme.de/game.php?*mode=scavenge*
-// @grant        none
+// @grant        GM_xmlhttpRequest
+// @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/icon.png
 // ==/UserScript==
+
+// Check for updates
+checkForUpdates();
+
+function checkForUpdates() {
+    // Get the current version number of the script
+    var currentVersion = GM_info.script.version;
+
+    // Make a request to the server to check for updates
+    GM_xmlhttpRequest({
+		method: "GET",
+		url: "",
+		onload: function(response) {
+			var updates = JSON.parse(response.responseText);
+
+			// Compare the current version to the latest version
+			if (updates.latest > currentVersion) {
+				// If an update is available, show a notification
+				alert("Ein Update ist verfügbar!");
+				// and redirect the user to the update link
+				location.href = updates.update_url;
+			}
+		}
+	});
+}
 
 var debug = false;
 var names = ["spear", "sword", "axe", "archer", "light", "marcher", "heavy"];

@@ -6,7 +6,7 @@
 // @author       Adrian
 // @match        https://*.die-staemme.de/game.php?*mode=scavenge*
 // @grant        GM_xmlhttpRequest
-// @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/icon.png
+// @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/Adrian/icon.png
 // ==/UserScript==
 
 // Check for updates

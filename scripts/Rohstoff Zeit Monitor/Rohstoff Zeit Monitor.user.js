@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rohstoff Zeit Monitor
 // @namespace    https://die-staemme.de/
-// @version      1.0
+// @version      1.1
 // @description  Zeigt die Zeiten für fehlende Rohstoffe an.
 // @author       DasMonschta
 // @match        https://*.die-staemme.de/game.php?*&screen=main
@@ -20,7 +20,7 @@ function checkForUpdates() {
     // Make a request to the server to check for updates
     GM_xmlhttpRequest({
 		method: "GET",
-		url: "",
+		url: "https://raw.githubusercontent.com/LaicosVK/DSS/main/scripts/Rohstoff%20Zeit%20Monitor/version.json",
 		onload: function(response) {
 			var updates = JSON.parse(response.responseText);
 

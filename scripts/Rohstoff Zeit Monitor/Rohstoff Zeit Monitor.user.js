@@ -7,7 +7,7 @@
 // @match        https://*.die-staemme.de/game.php?*&screen=main
 // @match        https://*.die-staemme.de/game.php?*&screen=snob
 // @grant        GM_xmlhttpRequest
-// @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/icon.png
+// @icon         https://raw.githubusercontent.com/LaicosVK/DSS/main/stuff/DasMonschta/icon.png
 // ==/UserScript==
 
 // Check for updates

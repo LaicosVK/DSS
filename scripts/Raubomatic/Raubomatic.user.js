@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Raubomatic
 // @namespace    https://die-staemme.de/
-// @version      1.1.1
+// @version      1.1.2
 // @description  Schickt auf Knopfdruck Einheiten auf Raubzüge los
 // @author       Adrian
 // @match        https://*.die-staemme.de/game.php?*mode=scavenge*
@@ -19,7 +19,7 @@ function checkForUpdates() {
     // Make a request to the server to check for updates
     GM_xmlhttpRequest({
 		method: "GET",
-		url: "",
+		url: "https://raw.githubusercontent.com/LaicosVK/DSS/main/scripts/Raubomatic/version.json",
 		onload: function(response) {
 			var updates = JSON.parse(response.responseText);
 

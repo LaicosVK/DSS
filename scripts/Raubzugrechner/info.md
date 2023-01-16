@@ -2,11 +2,11 @@
 <img align="right" height="100" src="picture.PNG"/>
 
 # Raubzugrechner
+Dieses Script wurde von Raubomatic ersetzt!
 Sobald im Raubzug Tab 2 Sammler freigeschaltet sind wird eine Tabelle eingeblendet.</br>
 Die Tabelle zeigt dir wieviele Einheiten zu welchen Sammlern müssen, um in der kürzesten Zeit die meisten resourcen zu bekommen.
 
 ## Details
-
 | Programmierer | LaicosVK |
 | :---: | :---: |
 | Version | 1.1 |

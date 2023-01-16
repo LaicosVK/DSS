@@ -9,11 +9,14 @@ es sind shortcuts zu bestimmten gebäuden.</br>
 ## Details
 | Programmierer | LaicosVK |
 | :---: | :---: |
-| Version | 1.2 |
-| Loader | 1.0 |
-| Aktualisierung | 10.01.23 |
+| Version | 1.3 |
+| Aktualisierung | 16.01.23 |
 
 ## Changelog
+
+### 1.3:
+- Autoupdate
+
 ### 1.2
--Neugeschrieben um es kleiner und sauberer zu machen.</br>
--Neue tabs können einfach hinzugefügt werden.
+- Neugeschrieben um es kleiner und sauberer zu machen.</br>
+- Neue tabs können einfach hinzugefügt werden.

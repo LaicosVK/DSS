@@ -9,8 +9,10 @@ Funktioniert im Hauptgebäude und im Adelshof.
 
 | Programmierer | DasMonschta |
 | :---: | :---: |
-| Version | 1.0 |
-| Loader | 1.0 |
-| Aktualisierung | 10.01.23 |
+| Version | 1.1 |
+| Aktualisierung | 16.01.23 |
 
 ## Changelog
+
+### 1.1:
+- Autoupdate

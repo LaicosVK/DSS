@@ -9,8 +9,10 @@ Die Tabelle zeigt dir wieviele Einheiten zu welchen Sammlern müssen, um in der 
 
 | Programmierer | LaicosVK |
 | :---: | :---: |
-| Version | 1.0 |
-| Loader | 1.0 |
-| Aktualisierung | 10.01.23 |
+| Version | 1.1 |
+| Aktualisierung | 16.01.23 |
 
 ## Changelog
+
+### 1.1:
+- Autoupdate

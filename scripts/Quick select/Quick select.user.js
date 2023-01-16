@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Quick select
 // @namespace    https://die-staemme.de/
-// @version      1.2
+// @version      1.3
 // @description  Eine leiste um schnell Gebäude auszuwählen
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Training redirect
 // @namespace    https://die-staemme.de/
-// @version      1.1
+// @version      1.2
 // @description  Wechselt automatisch zur Training Seite
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php*&screen=barracks
@@ -21,7 +21,7 @@ function checkForUpdates() {
     // Make a request to the server to check for updates
     GM_xmlhttpRequest({
 		method: "GET",
-		url: "",
+		url: "https://raw.githubusercontent.com/LaicosVK/DSS/main/scripts/Training%20redirect/version.json",
 		onload: function(response) {
 			var updates = JSON.parse(response.responseText);
 

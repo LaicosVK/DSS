@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Raubzugrechner
 // @namespace    https://die-staemme.de/
-// @version      1.0
+// @version      1.1
 // @description  Rechnet automatisch raubzug Truppeneinheiten aus
 // @author       LaicosVK
 // @match        https://*.die-staemme.de/game.php?*&mode=scavenge
@@ -19,7 +19,7 @@ function checkForUpdates() {
     // Make a request to the server to check for updates
     GM_xmlhttpRequest({
 		method: "GET",
-		url: "",
+		url: "https://raw.githubusercontent.com/LaicosVK/DSS/main/scripts/Raubzugrechner/version.json",
 		onload: function(response) {
 			var updates = JSON.parse(response.responseText);
 

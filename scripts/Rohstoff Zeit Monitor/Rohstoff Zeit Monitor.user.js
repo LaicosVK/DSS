@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rohstoff Zeit Monitor
 // @namespace    https://die-staemme.de/
-// @version      1.2
+// @version      1.2.1
 // @description  Zeigt die Zeiten für fehlende Rohstoffe an.
 // @author       DasMonschta
 // @match        https://*.die-staemme.de/game.php?*screen=main*
@@ -86,17 +86,17 @@ function checkForUpdates() {
         const snobStoneWarnElement = document.querySelector('.warn#next_snob_cost_stone ');
         const snobIronWarnElement = document.querySelector('.warn#next_snob_cost_iron');
 
-        snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<p></p>";
-        snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<p></p>";
-        snobIronWarnElement.innerHTML += icon + convertTime((50000-iron)/ironProd);
+        if (snobWoodWarnElement !== null) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<p></p>";
+        if (snobStoneWarnElement !== null) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<p></p>";
+        if (snobIronWarnElement !== null) snobIronWarnElement.innerHTML += icon + convertTime((50000-iron)/ironProd);
 
         // Goldmünze Rohstoffe
         const coinWoodWarnElement = document.querySelector('.warn#coin_cost_wood');
         const coinStoneWarnElement = document.querySelector('.warn#coin_cost_stone ');
         const coinIronWarnElement = document.querySelector('.warn#coin_cost_iron');
 
-        coinWoodWarnElement.innerHTML += icon + convertTime((28000-wood)/woodProd);
-        coinStoneWarnElement.innerHTML += icon + convertTime((30000-stone)/stoneProd);
-        coinIronWarnElement.innerHTML += icon + convertTime((25000-iron)/ironProd);
+        if (coinWoodWarnElement !== null) coinWoodWarnElement.innerHTML += icon + convertTime((28000-wood)/woodProd);
+        if (coinStoneWarnElement !== null) coinStoneWarnElement.innerHTML += icon + convertTime((30000-stone)/stoneProd);
+        if (coinIronWarnElement !== null) coinIronWarnElement.innerHTML += icon + convertTime((25000-iron)/ironProd);
     }
 })();

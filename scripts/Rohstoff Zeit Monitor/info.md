@@ -9,10 +9,13 @@ Funktioniert im Hauptgebäude und im Adelshof.
 
 | Programmierer | DasMonschta |
 | :---: | :---: |
-| Version | 1.2 |
-| Aktualisierung | 16.01.23 |
+| Version | 1.2.1 |
+| Aktualisierung | 19.01.23 |
 
 ## Changelog
+
+### 1.2.1
+ - Script zeigt nun auch die Zeit an, wenn nicht von allen Rohstoffen bei AGs / Münzen etwas fehlt.
 
 ### 1.2:
 - Fixed snob window

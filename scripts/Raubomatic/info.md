@@ -14,7 +14,8 @@ Zeigt im Raubzug-Menü einen Buttom zum automatischen Abschicken von Raubzügen 
 
 ## Changelog
 
-1.0 Erste Version
-1.1 - Raubomatic speichert die Einheitenauswahl jetzt (localStorage)
- - Bessere Einbindung des Menüs auf der Seite.
-1.1.1 - Bug, dass jeder Klick in das Raubomatic-Menü die Einheiten losgeschickt hat, wurde behoben.
+1.0 Erste Version</br>
+1.1 - Raubomatic speichert die Einheitenauswahl jetzt (localStorage)</br>
+ - Bessere Einbindung des Menüs auf der Seite.</br>
+1.1.1 - Bug, dass jeder Klick in das Raubomatic-Menü die Einheiten losgeschickt hat, wurde behoben.</br>
+1.1.2 - Autoupdate</br>

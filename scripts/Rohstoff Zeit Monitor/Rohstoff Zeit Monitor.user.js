@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rohstoff Zeit Monitor
 // @namespace    https://die-staemme.de/
-// @version      1.2
+// @version      1.2.1
 // @description  Zeigt die Zeiten für fehlende Rohstoffe an.
 // @author       DasMonschta
 // @match        https://*.die-staemme.de/game.php?*&screen=main*

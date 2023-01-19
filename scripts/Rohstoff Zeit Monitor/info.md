@@ -9,10 +9,13 @@ Funktioniert im Hauptgebäude und im Adelshof.
 
 | Programmierer | DasMonschta |
 | :---: | :---: |
-| Version | 1.1 |
+| Version | 1.2 |
 | Aktualisierung | 16.01.23 |
 
 ## Changelog
+
+### 1.2:
+- Fixed snob window
 
 ### 1.1:
 - Autoupdate

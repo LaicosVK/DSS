@@ -86,9 +86,9 @@ function checkForUpdates() {
         const snobStoneWarnElement = document.querySelector('#next_snob_cost_stone');
         const snobIronWarnElement = document.querySelector('#next_snob_cost_iron');
 
-        if (snobWoodWarnElement !== null && wood <= 40000) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<br><br>";
+        if (snobWoodWarnElement !== null && wood <= 40000) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<br>";
 		else snobWoodWarnElement.innerHTML += "<br>";
-        if (snobStoneWarnElement !== null && stone <= 50000) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<br><br>";
+        if (snobStoneWarnElement !== null && stone <= 50000) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<br>";
 		else snobStoneWarnElement.innerHTML += "<br>";
         if (snobIronWarnElement !== null && iron <= 50000) snobIronWarnElement.innerHTML += icon + convertTime((50000-iron)/ironProd);
 

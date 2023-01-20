@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rohstoff Zeit Monitor
 // @namespace    https://die-staemme.de/
-// @version      1.2.1
+// @version      1.2.2
 // @description  Zeigt die Zeiten für fehlende Rohstoffe an.
 // @author       DasMonschta
 // @match        https://*.die-staemme.de/game.php?*screen=main*
@@ -27,7 +27,7 @@ function checkForUpdates() {
 			// Compare the current version to the latest version
 			if (updates.latest > currentVersion) {
 				// If an update is available, show a notification
-				alert("Ein Update ist verfügbar!");
+				alert(GM_info.script.name + " hat ein Update!\n" + GM_info.script.version + " > " + updates.latest + "\nNeuerungen:\n" + updates.news);
 				// and redirect the user to the update link
 				location.href = updates.update_url;
 			}
@@ -56,11 +56,11 @@ function checkForUpdates() {
         number = number * 60;
         var hours = Math.floor(number / 60);
         var minutes = Math.floor(number % 60);
-        return hours + " h " + minutes + " m";
+        return hours + "h " + minutes + "m";
     }
 
     // Symbol vor Zeitangabe
-    const icon = "</br><span class='icon header time'></span>";
+    const icon = " <span class='icon header time'></span>";
 
     if(screen == "main"){
         // Hauptgebäude Rohstoffe
@@ -72,13 +72,13 @@ function checkForUpdates() {
 
         // Führe für jeden Rohstoff die Zeitberechnung durch und zeige sie an.
         Array.from(woodWarnElements).forEach((item, index)=>{
-            item.innerHTML += icon + convertTime((parseInt(item.textContent)-wood)/woodProd);
+            item.innerHTML += "<br>" + icon + convertTime((parseInt(item.textContent)-wood)/woodProd);
         })
         Array.from(stoneWarnElements).forEach((item, index)=>{
-            item.innerHTML += icon + convertTime((parseInt(item.textContent)-stone)/stoneProd);
+            item.innerHTML += "<br>" + icon + convertTime((parseInt(item.textContent)-stone)/stoneProd);
         })
         Array.from(ironWarnElements).forEach((item, index)=>{
-            item.innerHTML += icon + convertTime((parseInt(item.textContent)-iron)/ironProd);
+            item.innerHTML += "<br>" + icon + convertTime((parseInt(item.textContent)-iron)/ironProd);
         })
     }else if(screen == "snob"){
         // Adelsgeschlecht Rohstoffe
@@ -86,8 +86,8 @@ function checkForUpdates() {
         const snobStoneWarnElement = document.querySelector('.warn#next_snob_cost_stone ');
         const snobIronWarnElement = document.querySelector('.warn#next_snob_cost_iron');
 
-        if (snobWoodWarnElement !== null) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<p></p>";
-        if (snobStoneWarnElement !== null) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<p></p>";
+        if (snobWoodWarnElement !== null) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<br><br>";
+        if (snobStoneWarnElement !== null) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<br><br>";
         if (snobIronWarnElement !== null) snobIronWarnElement.innerHTML += icon + convertTime((50000-iron)/ironProd);
 
         // Goldmünze Rohstoffe
@@ -95,8 +95,8 @@ function checkForUpdates() {
         const coinStoneWarnElement = document.querySelector('.warn#coin_cost_stone ');
         const coinIronWarnElement = document.querySelector('.warn#coin_cost_iron');
 
-        if (coinWoodWarnElement !== null) coinWoodWarnElement.innerHTML += icon + convertTime((28000-wood)/woodProd);
-        if (coinStoneWarnElement !== null) coinStoneWarnElement.innerHTML += icon + convertTime((30000-stone)/stoneProd);
-        if (coinIronWarnElement !== null) coinIronWarnElement.innerHTML += icon + convertTime((25000-iron)/ironProd);
+        if (coinWoodWarnElement !== null) coinWoodWarnElement.innerHTML += "<br>" + icon + convertTime((28000-wood)/woodProd);
+        if (coinStoneWarnElement !== null) coinStoneWarnElement.innerHTML += "<br>" + icon + convertTime((30000-stone)/stoneProd);
+        if (coinIronWarnElement !== null) coinIronWarnElement.innerHTML += "<br>" + icon + convertTime((25000-iron)/ironProd);
     }
 })();

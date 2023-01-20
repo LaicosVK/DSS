@@ -26,7 +26,7 @@ function checkForUpdates() {
 			// Compare the current version to the latest version
 			if (updates.latest > currentVersion) {
 				// If an update is available, show a notification
-				alert("Ein Update ist verfügbar!");
+				alert(GM_info.script.name + " hat ein Update!\n" + GM_info.script.version + " > " + updates.latest + "\nNeuerungen:\n" + updates.news);
 				// and redirect the user to the update link
 				location.href = updates.update_url;
 			}

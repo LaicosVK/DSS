@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rohstoff Zeit Monitor
 // @namespace    https://die-staemme.de/
-// @version      1.2.2
+// @version      1.2.3
 // @description  Zeigt die Zeiten für fehlende Rohstoffe an.
 // @author       DasMonschta
 // @match        https://*.die-staemme.de/game.php?*screen=main*
@@ -82,13 +82,15 @@ function checkForUpdates() {
         })
     }else if(screen == "snob"){
         // Adelsgeschlecht Rohstoffe
-        const snobWoodWarnElement = document.querySelector('.warn#next_snob_cost_wood');
-        const snobStoneWarnElement = document.querySelector('.warn#next_snob_cost_stone ');
-        const snobIronWarnElement = document.querySelector('.warn#next_snob_cost_iron');
+        const snobWoodWarnElement = document.querySelector('#next_snob_cost_wood');
+        const snobStoneWarnElement = document.querySelector('#next_snob_cost_stone');
+        const snobIronWarnElement = document.querySelector('#next_snob_cost_iron');
 
-        if (snobWoodWarnElement !== null) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<br><br>";
-        if (snobStoneWarnElement !== null) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<br><br>";
-        if (snobIronWarnElement !== null) snobIronWarnElement.innerHTML += icon + convertTime((50000-iron)/ironProd);
+        if (snobWoodWarnElement !== null && wood <= 40000) snobWoodWarnElement.innerHTML += icon + convertTime((40000-wood)/woodProd) + "<br><br>";
+		else snobWoodWarnElement.innerHTML += "<br>";
+        if (snobStoneWarnElement !== null && stone <= 50000) snobStoneWarnElement.innerHTML += icon + convertTime((50000-stone)/stoneProd) + "<br><br>";
+		else snobStoneWarnElement.innerHTML += "<br>";
+        if (snobIronWarnElement !== null && iron <= 50000) snobIronWarnElement.innerHTML += icon + convertTime((50000-iron)/ironProd);
 
         // Goldmünze Rohstoffe
         const coinWoodWarnElement = document.querySelector('.warn#coin_cost_wood');

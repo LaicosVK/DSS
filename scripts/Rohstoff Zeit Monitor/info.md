@@ -9,11 +9,14 @@ Funktioniert im Hauptgebäude und im Adelshof.
 
 | Programmierer | DasMonschta |
 | :---: | :---: |
-| Version | 1.2.1 |
-| Aktualisierung | 19.01.23 |
+| Version | 1.2.3 |
+| Aktualisierung | 20.01.23 |
 
 ## Changelog
 
+### 1.2.2/3
+ - Im Adelshof werden die Zeiten nun besser angezeigt.
+ 
 ### 1.2.1
  - Script zeigt nun auch die Zeit an, wenn nicht von allen Rohstoffen bei AGs / Münzen etwas fehlt.
 

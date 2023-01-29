@@ -9,10 +9,13 @@ es sind shortcuts zu bestimmten gebäuden.</br>
 ## Details
 | Programmierer | LaicosVK |
 | :---: | :---: |
-| Version | 1.3 |
-| Aktualisierung | 16.01.23 |
+| Version | 1.4 |
+| Aktualisierung | 29.01.23 |
 
 ## Changelog
+
+### 1.4:
+- Fügt nun die pfeile hinzu um schnell Dörfer zu wechseln, sollte man keinen Premium haben
 
 ### 1.3:
 - Autoupdate

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Raubomatic
 // @namespace    https://die-staemme.de/
-// @version      1.1.2
+// @version      1.2
 // @description  Schickt auf Knopfdruck Einheiten auf Raubzüge los
 // @author       Adrian
 // @match        https://*.die-staemme.de/game.php?*mode=scavenge*
@@ -35,6 +35,7 @@ function checkForUpdates() {
 }
 
 var debug = false;
+var logged = false;
 var names = ["spear", "sword", "axe", "archer", "light", "marcher", "heavy"];
 var popCost = [1, 1, 1, 1, 4, 5, 6];
 
@@ -56,12 +57,12 @@ $( document ).ready(function() {
 		let storageChoice = localStorage.getItem("raubomaticUnitChoice");
 		if (storageChoice === null)
 		{
-			if (debug) console.log("localStorage leer, generiere Standardwert.");
+			if (debug) log("localStorage leer, generiere Standardwert.");
 			choice = storageChoice = "1111011";
 			localStorage.setItem("raubomaticUnitChoice", storageChoice);
 		}
 		else {
-			if (debug) console.log("localStorage wurde geladen: "+ storageChoice);
+			if (debug) log("localStorage wurde geladen: "+ storageChoice);
 			choice = storageChoice;
 		}
 
@@ -101,8 +102,8 @@ $( document ).ready(function() {
 		// Buttons für das automatische Eintragen und Absenden
 		raubomaticDiv.append('<button type="button" class="btn-default" id="startRaubomatic" title="Sendet automatisch alle der ausgewählten Einheiten auf Raubzug">Losschicken</button>');
 		$('#startRaubomatic').click(startRaubomatic);
-		raubomaticDiv.append('<input type="checkbox" id="selectionDebug"'+(debug ? ' checked="checked"':'') +'title="Der Debug-Modus versendet keine Truppen, sondern gibt die Aufteilung in der Browser-Konsole aus." /> Debug');
-		$("#selectionDebug").change(changeDebug);
+		raubomaticDiv.append('<input type="checkbox" id="selectionDebug"'+(debug ? ' checked="checked"':'') +'title="Der Debug-Modus versendet keine Truppen, sondern gibt die Aufteilung in der Browser-Konsole aus." /><label for="selectionDebug"> Debug</label>');
+		$("#selectionDebug").change(changeDebugSelection);
 	}, 20);
 });
 
@@ -115,17 +116,17 @@ function startRaubomatic() {
 	calcSendUnits();
 
 	if (debug == true) {
-		let allUnitsText = "Alle Einheiten:\n";
+		let allUnitsText = "Alle Einheiten:<br>";
 		for (let i = 0; i < unlocked; i++) {
 			for (let k = 0; k < 7; k++) {
-				allUnitsText += names[k] +": "+ sendUnits[i][k] +(k==6?"\n":", ");
+				allUnitsText += names[k] +": "+ sendUnits[i][k] +(k==6?"<br>":", ");
 			}
 		}
-		console.log(allUnitsText);
+		log(allUnitsText);
 	}
 	else {
 		sending = 0;
-		$('#serfaRaubzug').text("Bitte warten").css("filter", "grayscale(100%)");
+		$('#startRaubomatic').text("Bitte warten").css("filter", "grayscale(100%)");
 		sendScavenging();
 	}
 }
@@ -156,35 +157,38 @@ function calcSendUnits() {
 		minimumUnits += tempUnits[i] * popCost[i];
 		if (sendUnits[unlocked-1][i] < 0) {
 			debug = true;
-			console.log("Negative Anzahl an "+ names[i]);
+			refreshDebugState();
+			log("Negative Anzahl an "+ names[i]);
 		}
 	}
 	if (minimumUnits < 10)
 	{
 		debug = true;
-		console.log("Nicht genug Einheiten für letzten Raubzug ausgewählt: "+ minimumUnits +" Bevölkerung");
+		refreshDebugState();
+		log("Nicht genug Einheiten für letzten Raubzug ausgewählt: "+ minimumUnits +" Bevölkerung");
 	}
 }
 
 function sendScavenging() {
 	if (sending == unlocked || $("#scavenge_screen a.free_send_button").length === 0) {
-		$('#serfaRaubzug').text("Losschicken").css("filter", "none");
+		$('#startRaubomatic').text("Losschicken").css("filter", "none");
 		sending = -1;
 	} else {
 		let randomTime = 300 + Math.random()*100;
 		let changedInputs = 0;
 		for (let i = 0; i < 7; i++) {
-			if (choice[i] != false && sendUnits[sending][i] != 0) {
+			let input = $('input.unitsInput[name="'+ names[i] +'"]');
+			if (sendUnits[sending][i] != 0 || (input.val() != "" && choice[i] == false)) {
 				setTimeout(function () {
-					$('input.unitsInput[name="'+ names[i] +'"]').val(sendUnits[sending][i]).trigger("change");
-					console.log("Trage "+ names[i] +", Anzahl "+ sendUnits[sending][i] +" ein. ("+ sending +"#"+ i +")");
+					input.val(sendUnits[sending][i]).trigger("change");
+					if (debug) log("Trage "+ names[i] +", Anzahl "+ sendUnits[sending][i] +" ein. ("+ sending +"#"+ i +")");
 				}, changedInputs*randomTime + Math.random()*0.15*randomTime);
 				changedInputs++;
 			}
 		}
 		setTimeout(function () {
 			$("#scavenge_screen a.free_send_button")[0].click();
-			console.log("Klicke Absende-Button. ("+ sending +")");
+			if (debug) log("Klicke Absende-Button. ("+ sending +")");
 			sending++;
 			setTimeout(sendScavenging, randomTime + randomTime*Math.random());
 		}, changedInputs*randomTime + Math.random()*0.5*randomTime);
@@ -192,14 +196,30 @@ function sendScavenging() {
 }
 
 function changeUnitChoice() {
-	if (debug) console.log("Einheitenauswahl wurde geändert.");
+	if (debug) log("Einheitenauswahl wurde geändert.");
 	choice = "";
 	for(let i = 0; i < 7; i++) {
 		choice += ($("#unitTable input#selection"+names[i]).is(':checked') ? "1" : "0");
 	}
 	localStorage.setItem("raubomaticUnitChoice", choice);
 }
-function changeDebug() {
-	console.log("Debugmodus wurde "+ (debug?"de":"") +"aktiviert.");
+function changeDebugSelection() {
+	refreshDebugState();
+	log("Debugmodus wurde "+ (debug?"":"de") +"aktiviert.");
+}
+function refreshDebugState() {
 	debug = $("#selectionDebug").is(':checked');
+}
+
+function log(text) {
+	if (logged === false) {
+		$("#scavenge_screen > div > p.explanatory-text").append('<fieldset id="debugField" style="float:right; clear: left; width: 440px; height: 200px; background-color: #f4e4bc; margin: 6px 2px 2px; overflow: auto;"><legend>Raubomatic Debug</legend></fieldset>');
+		logged = true;
+	}
+	let debugField = $("#debugField");
+	let debugFieldScroll = debugField[0].scrollTop;
+	debugField.append('<p style="margin: 0.4em 0px 0px;">' + text + '</p>');
+	debugField[0].scroll({top: debugFieldScroll});
+	debugField[0].scroll({top: debugField[0].scrollHeight, behavior: 'smooth'});
+
 }

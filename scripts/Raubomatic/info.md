@@ -8,9 +8,8 @@ Zeigt im Raubzug-Menü einen Buttom zum automatischen Abschicken von Raubzügen 
 
 | Programmierer | Adrian |
 | :---: | :---: |
-| Version | 1.1 |
-| Loader | 1.0 |
-| Aktualisierung | 14.01.23 |
+| Version | 1.2 |
+| Aktualisierung | 30.01.23 |
 
 ## Changelog
 
@@ -19,3 +18,4 @@ Zeigt im Raubzug-Menü einen Buttom zum automatischen Abschicken von Raubzügen 
  - Bessere Einbindung des Menüs auf der Seite.</br>
 1.1.1 - Bug, dass jeder Klick in das Raubomatic-Menü die Einheiten losgeschickt hat, wurde behoben.</br>
 1.1.2 - Autoupdate</br>
+1.2 - Debugmodus erweitert</br>

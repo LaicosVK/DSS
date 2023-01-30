@@ -8,7 +8,7 @@ Benutzung auf eigene Gefahr!**
 | Script | Link | Mehr Infos |
 | :---: | :---: | :---: |
 | Quick select | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Quick%20select/Quick%20select.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Quick%20select/info.md) |
-| Raubomatic | soon | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Raubomatic/info.md) |
+| Raubomatic | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Raubomatic/Raubomatic.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Raubomatic/info.md) |
 | Rohstoff Zeit Monitor | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Rohstoff%20Zeit%20Monitor/Rohstoff%20Zeit%20Monitor.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Rohstoff%20Zeit%20Monitor/info.md) |
 | Training redirect | [Download](https://github.com/LaicosVK/DSS/raw/main/scripts/Training%20redirect/Training%20redirect.user.js) | [Infos](https://github.com/LaicosVK/DSS/blob/main/scripts/Training%20redirect/info.md) |
 

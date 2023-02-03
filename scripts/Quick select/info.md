@@ -14,6 +14,9 @@ es sind shortcuts zu bestimmten gebäuden.</br>
 
 ## Changelog
 
+### 1.5
+- Fix um beim gleichen screen zu bleiben wenn man mit pfeilen das Dorf wechselt
+
 ### 1.4:
 - Fügt nun die pfeile hinzu um schnell Dörfer zu wechseln, sollte man keinen Premium haben
 
